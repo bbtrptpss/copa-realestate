@@ -21,7 +21,6 @@ export default buildConfig({
     meta: {
       titleSuffix: "— Copa Real Estate CMS",
     },
-    css: path.resolve(dirname, "src/components/admin/custom.css"),
     components: {
       Nav: "/src/components/admin/Nav#Nav",
       graphics: {
