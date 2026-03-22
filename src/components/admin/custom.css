@@ -1,0 +1,285 @@
+/* ================================================================
+   Copa Real Estate — Payload Admin Theme
+   Dark navy · Gold (#C9A96E) accent
+   ================================================================ */
+
+/* ── CSS token overrides ─────────────────────────────────────── */
+:root,
+[data-theme='dark'] {
+  --theme-bg:             #0c0e14;
+  --theme-input-bg:       #13161f;
+  --theme-text:           #dde1ea;
+  --theme-elevation-0:    #0c0e14;
+  --theme-elevation-50:   #10121a;
+  --theme-elevation-100:  #13161f;
+  --theme-elevation-150:  #181b25;
+  --theme-elevation-200:  #1d2030;
+  --theme-elevation-250:  #222638;
+  --theme-elevation-500:  #2a2f42;
+  --theme-elevation-800:  #363c54;
+  --theme-elevation-1000: #424966;
+
+  --theme-success-50:  #fdf8ee;
+  --theme-success-100: #f9edcf;
+  --theme-success-250: #e8c97e;
+  --theme-success-350: #d4b46a;
+  --theme-success-500: #C9A96E;
+  --theme-success-600: #b8923c;
+  --theme-success-750: #8a6c2a;
+  --theme-success-900: #4a3910;
+
+  --copa-gold:      #C9A96E;
+  --copa-gold-soft: rgba(201, 169, 110, 0.10);
+  --copa-gold-mid:  rgba(201, 169, 110, 0.28);
+  --copa-border:    rgba(255, 255, 255, 0.06);
+}
+
+[data-theme='light'] {
+  --theme-bg:            #f4f5f8;
+  --theme-input-bg:      #ffffff;
+  --theme-elevation-100: #eeeff4;
+  --theme-elevation-200: #e8eaf0;
+  --copa-gold-soft: rgba(201, 169, 110, 0.10);
+  --copa-border:    rgba(0, 0, 0, 0.07);
+}
+
+/* ── Hide default Payload dashboard list ─────────────────────── */
+.dashboard__label,
+.dashboard__groups,
+.dashboard > .render-fields,
+.dashboard__wrap > h2 {
+  display: none !important;
+}
+
+/* ================================================================
+   SIDEBAR — Custom Nav.tsx handles all structure.
+   These classes handle hover transitions (can't do in inline style).
+   ================================================================ */
+
+/* Hide Payload's built-in nav collapse / hamburger toggle */
+.nav-toggler,
+.nav__toggle,
+.nav__hamburger,
+.nav-hamburger,
+button.nav-toggler,
+button.nav-hamburger,
+[class*="navToggler"],
+[class*="nav-toggler"],
+[class*="navHamburger"],
+[class*="nav-hamburger"],
+[class*="Hamburger"],
+/* by id/element */
+#nav > button,
+nav#nav > button,
+.nav > button,
+nav.nav > button,
+/* by aria */
+button[aria-controls="nav"],
+button[aria-label*="nav" i],
+button[aria-label*="menu" i] {
+  display: none !important;
+}
+
+.copa-nav-link:hover {
+  background: rgba(255, 255, 255, 0.045) !important;
+  color: rgba(210, 215, 228, 0.82) !important;
+  border-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+.copa-nav-link:hover svg {
+  color: rgba(210, 215, 228, 0.62) !important;
+}
+
+.copa-footer-link:hover {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: rgba(210, 215, 228, 0.62) !important;
+}
+
+/* ================================================================
+   TOP BAR / APP HEADER
+   ================================================================ */
+
+.app-header {
+  background: rgba(12, 14, 20, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.10) !important;
+}
+
+.step-nav__label,
+.step-nav a {
+  color: rgba(221, 225, 234, 0.42) !important;
+  font-size: 13px !important;
+}
+.step-nav__label:last-child,
+.step-nav a:last-child {
+  color: rgba(221, 225, 234, 0.88) !important;
+}
+.step-nav__chevron {
+  color: rgba(201, 169, 110, 0.32) !important;
+}
+
+/* ================================================================
+   BUTTONS
+   ================================================================ */
+
+.btn--style-primary {
+  background: var(--copa-gold) !important;
+  color: #07080c !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 14px rgba(201, 169, 110, 0.22) !important;
+  transition: background 0.15s, box-shadow 0.15s, transform 0.1s !important;
+}
+.btn--style-primary:hover {
+  background: #d4b47a !important;
+  box-shadow: 0 4px 20px rgba(201, 169, 110, 0.36) !important;
+  transform: translateY(-1px) !important;
+}
+.btn--style-primary:active {
+  transform: translateY(0) !important;
+}
+
+.btn--style-secondary {
+  border-color: var(--copa-border) !important;
+  transition: border-color 0.15s, background 0.15s !important;
+}
+.btn--style-secondary:hover {
+  border-color: rgba(201, 169, 110, 0.28) !important;
+  background: var(--copa-gold-soft) !important;
+}
+
+/* ================================================================
+   COLLECTION TABLES
+   ================================================================ */
+
+.table th,
+.cell-action .sort-column__label {
+  font-size: 10.5px !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  color: var(--copa-gold) !important;
+  opacity: 0.65 !important;
+}
+.table tr:hover td { background: rgba(201, 169, 110, 0.05) !important; }
+.table          { border-color: var(--copa-border) !important; }
+.table td, .table th { border-bottom-color: var(--copa-border) !important; }
+
+.list-header,
+.collection-list__header {
+  border-bottom: 1px solid rgba(201, 169, 110, 0.10) !important;
+}
+
+/* ================================================================
+   DOCUMENT EDITOR / FORMS
+   ================================================================ */
+
+.field-label, label.field-label {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+  color: rgba(221, 225, 234, 0.48) !important;
+}
+
+.field-type input,
+.field-type textarea,
+.field-type select {
+  border-color: var(--copa-border) !important;
+  background: var(--theme-elevation-100) !important;
+  transition: border-color 0.15s, box-shadow 0.15s !important;
+}
+.field-type input:focus,
+.field-type textarea:focus,
+.field-type select:focus {
+  border-color: rgba(201, 169, 110, 0.42) !important;
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.09) !important;
+  outline: none !important;
+}
+
+.tabs-field__tab-button--active,
+.doc-tab--active {
+  border-bottom-color: var(--copa-gold) !important;
+  color: var(--copa-gold) !important;
+}
+
+.doc-header {
+  border-bottom: 1px solid rgba(201, 169, 110, 0.10) !important;
+}
+
+/* ================================================================
+   PILLS / BADGES
+   ================================================================ */
+
+.pill--style-success, .status-pill--published {
+  background: rgba(201, 169, 110, 0.12) !important;
+  color: var(--copa-gold) !important;
+  border: 1px solid rgba(201, 169, 110, 0.28) !important;
+  font-weight: 600 !important;
+}
+.pill--style-error, .status-pill--draft {
+  background: rgba(248, 113, 113, 0.10) !important;
+  color: #f87171 !important;
+  border: 1px solid rgba(248, 113, 113, 0.20) !important;
+}
+
+/* ================================================================
+   TOAST / MODAL
+   ================================================================ */
+
+.toast {
+  background: var(--theme-elevation-200) !important;
+  border: 1px solid var(--copa-border) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+.toast--success { border-left: 3px solid var(--copa-gold) !important; }
+.toast--error   { border-left: 3px solid #f87171 !important; }
+
+.modal-item {
+  background: var(--theme-elevation-100) !important;
+  border: 1px solid var(--copa-border) !important;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ================================================================
+   DASHBOARD — BeforeDashboard hover effects
+   ================================================================ */
+
+.copa-stat-card:hover {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  background: var(--theme-elevation-150) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+}
+.copa-action-item:hover {
+  border-color: rgba(255, 255, 255, 0.10) !important;
+  background: var(--theme-elevation-150) !important;
+}
+
+@media (max-width: 1100px) {
+  .copa-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .copa-stats-grid { grid-template-columns: 1fr !important; }
+  .copa-bottom-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ================================================================
+   SCROLLBAR
+   ================================================================ */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 169, 110, 0.2) transparent;
+}
+*::-webkit-scrollbar       { width: 4px; height: 4px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(201, 169, 110, 0.2);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 169, 110, 0.42);
+}
