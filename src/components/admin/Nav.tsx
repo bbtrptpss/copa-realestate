@@ -76,7 +76,10 @@ const icons = {
 };
 
 /* ── nav structure ───────────────────────────────────────────── */
-const navGroups = [
+type NavItem = { href: string; label: string; icon: React.ReactElement; exact?: boolean };
+type NavGroup = { label: string | null; items: NavItem[] };
+
+const navGroups: NavGroup[] = [
   {
     label: null,
     items: [
