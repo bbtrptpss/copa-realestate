@@ -29,14 +29,14 @@ export default function HomePage() {
       {/* 4. Luxury Collection Banner */}
       <LuxuryBanner />
 
+      {/* 7. News & Articles */}
+      <NewsSection />
+
       {/* 5. Brand Story — lifestyle narrative */}
       <BrandStorySection />
 
       {/* 6. Awards & Stats */}
       <AwardsSection />
-
-      {/* 7. News & Articles */}
-      <NewsSection />
 
       {/* 8. Newsletter Signup */}
       <NewsletterSection />

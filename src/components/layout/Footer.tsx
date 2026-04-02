@@ -4,8 +4,8 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react"
 const projects = [
   { name: "Copa Beach Jomtien", href: "/projects/copa-beach-jomtien" },
   { name: "Copa Coral Reef", href: "/projects/copa-coral-reef" },
-  { name: "Copa Azure Villa", href: "/projects/copa-azure-villa" },
-  { name: "Copa Sky Residence", href: "/projects/copa-sky-residence" },
+  // { name: "Copa Azure Villa", href: "/projects/copa-azure-villa" },
+  // { name: "Copa Sky Residence", href: "/projects/copa-sky-residence" },
 ];
 
 const company = [

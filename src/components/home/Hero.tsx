@@ -27,17 +27,17 @@ const slides = [
     beds: "1–2",
     baths: "1",
   },
-  {
-    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80",
-    badge: "UPCOMING",
-    badgeColor: "bg-navy-600",
-    title: "Copa Azure Villa",
-    subtitle: "วิลล่าส่วนตัวพร้อมสระว่ายน้ำ บนทำเลหรู วิวทะเลและภูเขา",
-    location: "พัทยาเหนือ ชลบุรี",
-    type: "วิลล่า",
-    beds: "3–5",
-    baths: "3–5",
-  },
+  // {
+  //   image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80",
+  //   badge: "UPCOMING",
+  //   badgeColor: "bg-navy-600",
+  //   title: "Copa Azure Villa",
+  //   subtitle: "วิลล่าส่วนตัวพร้อมสระว่ายน้ำ บนทำเลหรู วิวทะเลและภูเขา",
+  //   location: "พัทยาเหนือ ชลบุรี",
+  //   type: "วิลล่า",
+  //   beds: "3–5",
+  //   baths: "3–5",
+  // },
 ];
 
 export default function Hero() {

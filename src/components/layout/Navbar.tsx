@@ -9,7 +9,7 @@ const navLinks = [
   {
     href: "/projects",
     label: "โครงการ",
-    children: ["Copa Beach Jomtien", "Copa Coral Reef", "Copa Azure Villa", "Copa Sky Residence"],
+    children: ["Copa Beach Jomtien", "Copa Coral Reef"],
   },
   { href: "/about", label: "เกี่ยวกับเรา" },
   { href: "/news", label: "ข่าวสาร" },
