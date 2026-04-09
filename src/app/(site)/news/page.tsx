@@ -4,7 +4,7 @@ import { Calendar, ArrowRight } from "lucide-react";
 import { formatDate } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "ข่าวสารและบทความ | Copa Real Estate",
+  title: "ข่าวสารและบทความ | Copacabana Group",
   description: "อ่านข่าวสาร บทความ และเคล็ดลับเกี่ยวกับอสังหาริมทรัพย์และการใช้ชีวิตริมทะเลพัทยา จอมเทียน",
 };
 

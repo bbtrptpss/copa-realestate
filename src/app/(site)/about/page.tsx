@@ -3,12 +3,12 @@ import { CheckCircle2, Award, Users, Building2, Globe } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "เกี่ยวกับเรา | Copa Real Estate",
-  description: "Copa Real Estate ผู้พัฒนาอสังหาริมทรัพย์ระดับ Luxury ริมทะเลพัทยา จอมเทียน มากกว่า 15 ปีประสบการณ์",
+  title: "เกี่ยวกับเรา | Copacabana Group",
+  description: "Copacabana Group ผู้พัฒนาอสังหาริมทรัพย์ระดับ Luxury ริมทะเลพัทยา จอมเทียน มากกว่า 15 ปีประสบการณ์",
 };
 
 const milestones = [
-  { year: "2008", event: "ก่อตั้ง Copa Real Estate" },
+  { year: "2008", event: "ก่อตั้ง Copacabana Group" },
   { year: "2012", event: "เปิดตัวโปรเจกต์แรก Copa Beach" },
   { year: "2016", event: "ขยาย 1,000 ยูนิต" },
   { year: "2020", event: "รางวัล Best Developer Pattaya" },
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-navy-900/70" />
         <div className="relative text-center text-white px-4">
           <p className="text-gold-400 text-sm tracking-widest uppercase mb-3">เกี่ยวกับเรา</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold">Copa Real Estate</h1>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold">Copacabana Group</h1>
         </div>
       </section>
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
               <p className="section-subtitle">เรื่องราวของเรา</p>
               <h2 className="section-title mb-6">มากกว่า 15 ปี <br />ในวงการอสังหาริมทรัพย์</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Copa Real Estate ได้รับแรงบันดาลใจจากชายหาด Copacabana อันโด่งดังในรีโอ เด จาเนโร
+                Copacabana Group ได้รับแรงบันดาลใจจากชายหาด Copacabana อันโด่งดังในรีโอ เด จาเนโร
                 ประเทศบราซิล ซึ่งเป็นชายหาดระดับโลกที่มีความยาว 5 กิโลเมตร
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">

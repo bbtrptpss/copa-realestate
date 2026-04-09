@@ -3,13 +3,9 @@
 import { useEffect, useState } from "react";
 import { X, Phone } from "lucide-react";
 import Image from "next/image";
+import popupImage from "@/Picture/popup.jpg";
 
 const SESSION_KEY = "copa_popup_shown";
-
-// ---- เปลี่ยนตรงนี้เมื่อมีรูปจริง ----
-const AD_IMAGE =
-  "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1200&q=85";
-// -------------------------------------
 
 export default function PopupModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,8 +77,8 @@ export default function PopupModal() {
         {/* รูปโครงการ — สูง 420px บน desktop */}
         <div style={{ position: "relative", width: "100%", height: "clamp(240px, 45vw, 420px)" }}>
           <Image
-            src={AD_IMAGE}
-            alt="โครงการ Copa Real Estate"
+            src={popupImage}
+            alt="โครงการ Copacabana Group"
             fill
             className="object-cover"
             priority
@@ -124,30 +120,7 @@ export default function PopupModal() {
               right: "24px",
             }}
           >
-            <p
-              style={{
-                color: "#f8c932",
-                fontSize: "11px",
-                fontWeight: 600,
-                letterSpacing: "0.25em",
-                textTransform: "uppercase",
-                marginBottom: "6px",
-              }}
-            >
-              Copa Real Estate
-            </p>
-            <h2
-              style={{
-                color: "#ffffff",
-                fontSize: "clamp(1.4rem, 4vw, 2rem)",
-                fontWeight: 700,
-                fontFamily: "'Playfair Display', serif",
-                lineHeight: 1.25,
-                textShadow: "0 2px 12px rgba(0,0,0,0.5)",
-              }}
-            >
-              คอนโดหรู วิวทะเล<br />ริมหาดจอมเทียน
-            </h2>
+           
           </div>
         </div>
 

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "ติดต่อเรา | Copa Real Estate",
-  description: "ติดต่อทีม Copa Real Estate เพื่อสอบถามข้อมูลคอนโดริมทะเลพัทยา นัดชมโชว์รูมฟรี",
+  title: "ติดต่อเรา | Copacabana Group",
+  description: "ติดต่อทีม Copacabana Group เพื่อสอบถามข้อมูลคอนโดริมทะเลพัทยา นัดชมโชว์รูมฟรี",
 };
 
 const offices = [
@@ -137,7 +137,7 @@ export default function ContactPage() {
                   style={{ border: 0 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Copa Real Estate Location"
+                  title="Copacabana Group Location"
                 />
               </div>
             </div>

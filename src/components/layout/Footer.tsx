@@ -70,8 +70,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail size={13} className="text-gold-400 shrink-0" />
-                <a href="mailto:info@coparealestate.com" className="hover:text-gold-400 transition-colors">
-                  info@coparealestate.com
+                <a href="mailto:info.coral@copacabanacoralreef.com" className="hover:text-gold-400 transition-colors">
+                  info.coral@copacabanacoralreef.com
                 </a>
               </div>
               <div className="flex items-start gap-2.5">
@@ -144,7 +144,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-600">
-          <span>COPYRIGHT © {new Date().getFullYear()}, COPA REAL ESTATE CO., LTD. ALL RIGHTS RESERVED.</span>
+          <span>COPYRIGHT © {new Date().getFullYear()}, COPACABANA GROUP CO., LTD. ALL RIGHTS RESERVED.</span>
           <div className="flex items-center gap-4">
             <Link href="/sitemap.xml" className="hover:text-gold-400 transition-colors uppercase tracking-wide">
               Site Map

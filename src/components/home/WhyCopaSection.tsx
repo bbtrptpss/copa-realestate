@@ -4,7 +4,7 @@ const highlights = [
   {
     icon: Award,
     title: "รางวัลแห่งความเป็นเลิศ",
-    desc: "Copa Real Estate ได้รับการยอมรับในระดับนานาชาติ ด้วยรางวัล Best Luxury Condo Development ติดต่อกัน 3 ปีซ้อน",
+    desc: "Copacabana Group ได้รับการยอมรับในระดับนานาชาติ ด้วยรางวัล Best Luxury Condo Development ติดต่อกัน 3 ปีซ้อน",
   },
   {
     icon: Gem,

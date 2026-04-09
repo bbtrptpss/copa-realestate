@@ -65,8 +65,8 @@ export default function NewsSection({ posts }: { posts?: Post[] }) {
 
         <div className="grid md:grid-cols-3 gap-8">
           {displayPosts.map((post) => (
-            <article key={post._id} className="bg-white rounded-sm overflow-hidden shadow-md card-hover">
-              <div className="relative overflow-hidden h-52 group">
+            <article key={post._id} className="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+              <div className="relative overflow-hidden h-72 group">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={post.mainImage?.url || "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"}

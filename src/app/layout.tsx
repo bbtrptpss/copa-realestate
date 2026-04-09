@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Copa Real Estate | คอนโดหรู ริมทะเล พัทยา จอมเทียน",
-    template: "%s | Copa Real Estate",
+    default: "Copacabana Group | คอนโดหรู ริมทะเล พัทยา จอมเทียน",
+    template: "%s | Copacabana Group",
   },
   description:
     "อสังหาริมทรัพย์หรูริมทะเล พัทยา จอมเทียน คอนโดวิวทะเล ราคาดี ทำเลทอง เหมาะสำหรับการลงทุนและพักอาศัย",
   keywords: ["คอนโดพัทยา", "คอนโดจอมเทียน", "อสังหาริมทรัพย์ริมทะเล", "คอนโดวิวทะเล", "ลงทุนอสังหา"],
-  authors: [{ name: "Copa Real Estate" }],
+  authors: [{ name: "Copacabana Group" }],
   openGraph: {
     type: "website",
     locale: "th_TH",
-    siteName: "Copa Real Estate",
+    siteName: "Copacabana Group",
   },
 };
 

@@ -1,10 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, ArrowRight } from "lucide-react";
+import jomtienCoverImg from "@/Picture/Copa Beach Jomtien/36464040_277772809630575_3371106022310543360_n.jpg";
+import coralReefCoverImg from "@/Picture/Copa Coral Reef/611252061_122253659144059484_2555454243191660700_n.jpg";
 
 export const metadata: Metadata = {
-  title: "โปรเจกต์ทั้งหมด | Copa Real Estate",
-  description: "ดูโปรเจกต์คอนโดหรูทั้งหมดของ Copa Real Estate ริมทะเลพัทยา จอมเทียน",
+  title: "โปรเจกต์ทั้งหมด | Copacabana Group",
+  description: "ดูโปรเจกต์คอนโดหรูทั้งหมดของ Copacabana Group ริมทะเลพัทยา จอมเทียน",
 };
 
 const projects = [
@@ -18,7 +20,7 @@ const projects = [
     units: "450 ยูนิต",
     floors: "34 ชั้น",
     completion: "พร้อมโอน",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    image: jomtienCoverImg.src,
     slug: "copa-beach-jomtien",
     description: "คอนโดหรูริมหาดจอมเทียน วิวทะเลพาโนรามาอ่าวไทย พร้อมสิ่งอำนวยความสะดวกระดับ 5 ดาว",
     highlights: ["ติดชายหาดจอมเทียน", "สระว่ายน้ำ Infinity", "ฟิตเนส & Spa", "ที่จอดรถ 100%"],
@@ -33,7 +35,7 @@ const projects = [
     units: "520 ยูนิต",
     floors: "45 ชั้น",
     completion: "Q4 2027",
-    image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80",
+    image: coralReefCoverImg.src,
     slug: "copa-coral-reef",
     description: "High-Rise Luxury คอนโดแห่งใหม่ล่าสุด ออกแบบโดยสถาปนิกระดับโลก มีแผ่นดินแดนแห่งความสมบูรณ์แบบ",
     highlights: ["High-Rise 45 ชั้น", "Sky Pool ชั้น 44", "Sky Garden", "EV Charging Station"],

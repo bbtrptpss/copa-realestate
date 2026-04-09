@@ -1,8 +1,9 @@
 import { Metadata } from "next";
+import VirtualTourSection from "@/components/home/VirtualTourSection";
 
 export const metadata: Metadata = {
-  title: "แกลเลอรี่ | Copa Real Estate",
-  description: "ดูภาพถ่ายจริงของโครงการ Copa Real Estate คอนโดหรูริมทะเล พัทยา จอมเทียน",
+  title: "แกลเลอรี่ | Copacabana Group",
+  description: "ดูภาพถ่ายจริงของโครงการ Copacabana Group คอนโดหรูริมทะเล พัทยา จอมเทียน",
 };
 
 const categories = ["ทั้งหมด", "Copa Beach Jomtien", "Copa Coral Reef", "สิ่งอำนวยความสะดวก", "วิวทะเล"];
@@ -77,6 +78,8 @@ export default function GalleryPage() {
           </div>
         </div>
       </section>
+      {/* Virtual Tour 360° */}
+      <VirtualTourSection />
     </>
   );
 }

@@ -29,8 +29,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        serif: ["Playfair Display", "serif"],
+        sans: ["var(--font-thai-sans)", "sans-serif"],
+        serif: ["var(--font-thai-serif)", "serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",

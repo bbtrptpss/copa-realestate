@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { MapPin, ArrowRight, Bed, Bath } from "lucide-react";
+import jomtienCoverImg from "@/Picture/Copa Beach Jomtien/36464040_277772809630575_3371106022310543360_n.jpg";
+import coralReefCoverImg from "@/Picture/Copa Coral Reef/611252061_122253659144059484_2555454243191660700_n.jpg";
 
 const defaultProjects = [
   {
     id: "1",
-    badge: "READY TO MOVE",
+    badge: "READY TO MOVE IN",
     badgeColor: "bg-green-500",
     type: "คอนโดมิเนียม",
     title: "Copa Beach Jomtien",
@@ -13,7 +15,7 @@ const defaultProjects = [
     beds: "1–2",
     baths: "1",
     priceRange: "เริ่ม 2.5 ล้านบาท",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    image: jomtienCoverImg.src,
     slug: "copa-beach-jomtien",
   },
   {
@@ -27,7 +29,7 @@ const defaultProjects = [
     beds: "1–3",
     baths: "1–2",
     priceRange: "เริ่ม 3.2 ล้านบาท",
-    image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80",
+    image: coralReefCoverImg.src,
     slug: "copa-coral-reef",
   },
   // {

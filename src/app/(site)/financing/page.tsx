@@ -3,8 +3,8 @@ import { CheckCircle2, Calculator, CreditCard, FileText, Phone } from "lucide-re
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "การเงินและสินเชื่อ | Copa Real Estate",
-  description: "ข้อมูลการเงิน สินเชื่อ และแผนการผ่อนชำระสำหรับคอนโด Copa Real Estate พัทยา จอมเทียน",
+  title: "การเงินและสินเชื่อ | Copacabana Group",
+  description: "ข้อมูลการเงิน สินเชื่อ และแผนการผ่อนชำระสำหรับคอนโด Copacabana Group พัทยา จอมเทียน",
 };
 
 const steps = [

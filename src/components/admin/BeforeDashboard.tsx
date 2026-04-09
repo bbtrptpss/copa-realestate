@@ -152,7 +152,7 @@ export const BeforeDashboard = async () => {
 
         <div style={{ position: "relative" }}>
           <p style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.24em", textTransform: "uppercase", color: "#C9A96E", opacity: 0.75, margin: "0 0 10px" }}>
-            ยินดีต้อนรับ · Copa Real Estate CMS
+            ยินดีต้อนรับ · Copacabana Group CMS
           </p>
           <h1 style={{ fontSize: "30px", fontWeight: 700, fontFamily: "Georgia,serif", color: "#f0e8d8", margin: "0 0 8px", lineHeight: 1.15, letterSpacing: "0.03em" }}>
             ระบบจัดการเนื้อหา

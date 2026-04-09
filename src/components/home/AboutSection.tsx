@@ -20,7 +20,7 @@ export default function AboutSection() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
-                alt="Copa Real Estate"
+                alt="Copacabana Group"
                 className="w-full h-96 lg:h-[500px] object-cover"
               />
             </div>
@@ -42,7 +42,7 @@ export default function AboutSection() {
               ระดับแนวหน้าของพัทยา
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Copa Real Estate ได้รับแรงบันดาลใจจากชายหาด Copacabana ระดับโลกในรีโอ เด จาเนโร ประเทศบราซิล
+              Copacabana Group ได้รับแรงบันดาลใจจากชายหาด Copacabana ระดับโลกในรีโอ เด จาเนโร ประเทศบราซิล
               เราพัฒนาโปรเจกต์อสังหาริมทรัพย์ระดับ Luxury บนทำเลทองริมหาดจอมเทียน
               เพื่อตอบสนองไลฟ์สไตล์สมัยใหม่และเพิ่มสีสันให้กับชีวิตริมทะเล
             </p>

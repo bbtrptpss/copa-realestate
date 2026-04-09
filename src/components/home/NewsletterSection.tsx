@@ -23,7 +23,7 @@ export default function NewsletterSection() {
               รับข่าวสารและสิทธิพิเศษ
             </h2>
             <p className="text-gray-400 text-sm mb-8">
-              กรอกอีเมลเพื่อรับข้อมูลโปรเจกต์ใหม่ โปรโมชั่นพิเศษ และข่าวสารจาก Copa Real Estate ก่อนใคร
+              กรอกอีเมลเพื่อรับข้อมูลโปรเจกต์ใหม่ โปรโมชั่นพิเศษ และข่าวสารจาก Copacabana Group ก่อนใคร
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
               <input
@@ -42,7 +42,7 @@ export default function NewsletterSection() {
               </button>
             </form>
             <p className="text-gray-500 text-xs mt-4">
-              ยินยอมให้ Copa Real Estate รวบรวมและใช้ข้อมูลส่วนบุคคลตาม{" "}
+              ยินยอมให้ Copacabana Group รวบรวมและใช้ข้อมูลส่วนบุคคลตาม{" "}
               <a href="#" className="text-gold-400 hover:underline">นโยบายความเป็นส่วนตัว</a>
             </p>
           </>
@@ -51,7 +51,7 @@ export default function NewsletterSection() {
             <div className="text-gold-400 text-5xl mb-6">✓</div>
             <h2 className="font-serif text-3xl font-bold text-white mb-3">ขอบคุณที่ลงทะเบียน</h2>
             <p className="text-gray-400 text-sm">
-              เราจะส่งข่าวสารและข้อเสนอพิเศษจาก Copa Real Estate มาให้คุณเร็วๆ นี้
+              เราจะส่งข่าวสารและข้อเสนอพิเศษจาก Copacabana Group มาให้คุณเร็วๆ นี้
             </p>
             <button
               onClick={() => { setSubmitted(false); setEmail(""); }}
