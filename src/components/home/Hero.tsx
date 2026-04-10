@@ -84,7 +84,7 @@ export default function Hero() {
         <p className="text-gray-200 text-base md:text-lg max-w-2xl mb-8 leading-relaxed">
           {slide.subtitle}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="hidden sm:flex flex-col sm:flex-row gap-4 items-center">
           <Link href="/projects" className="btn-primary">
             ดูรายละเอียด
           </Link>

@@ -8,9 +8,9 @@ export default function BrandStorySection() {
   const { lang } = useI18n();
 
   return (
-    <section className="bg-navy-900 py-24 px-4">
+    <section className="bg-navy-900 py-24 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-[3fr_6fr] gap-40 items-center">
           {/* Left: Text */}
           <div>
             <p className="text-gold-400 text-xs font-semibold tracking-[0.35em] uppercase mb-6">
@@ -38,14 +38,16 @@ export default function BrandStorySection() {
           </div>
 
           {/* Right: Brand Video */}
-          <div className="relative w-full aspect-video border border-white/10">
-            <iframe
-              src="https://www.youtube.com/embed/APz4-pNTa1E"
-              title="Copacabana Group — Brand Story"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
-            />
+          <div className="lg:-mr-16 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+            <div className="relative w-full aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/APz4-pNTa1E?autoplay=1&mute=1&loop=1&playlist=APz4-pNTa1E"
+                title="Copacabana Group — Brand Story"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
           </div>
         </div>
       </div>

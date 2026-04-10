@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logoImg from "@/Logo/logo.png";
 import { Menu, X, Search, Globe, ChevronDown, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { languageLabels, t, SUPPORTED_LANGS } from "@/lib/i18n";
@@ -70,9 +72,9 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between py-2 text-xs text-white/60">
           <span>{t.navbar.topbar[lang]}</span>
           <div className="flex items-center gap-4">
-            <a href="tel:+66962511155" className="hover:text-gold-400 transition-colors">
+            {/* <a href="tel:+66962511155" className="hover:text-gold-400 transition-colors">
               +66 (0) 96 251 1155
-            </a>
+            </a> */}
             <span className="text-white/20">|</span>
             <a href="/admin" className="hover:text-gold-400 transition-colors">
               Admin
@@ -85,18 +87,8 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-9 h-9 bg-gold-500 flex items-center justify-center">
-              <span className="text-white font-bold text-base font-serif">C</span>
-            </div>
-            <div>
-              <div className="text-white font-serif font-bold text-base leading-tight tracking-wide">
-                COPACABANA
-              </div>
-              <div className="text-gold-400 text-[9px] tracking-[0.3em] uppercase font-medium">
-                Group
-              </div>
-            </div>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image src={logoImg} alt="Copacabana Group" height={48} className="h-12 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}

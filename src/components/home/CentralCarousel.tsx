@@ -19,14 +19,33 @@ const slides = [
   { id: 5, src: img5, label: "ส่วนกลาง" },
 ];
 
-const CARD_W  = 420;
-const CARD_H  = 580;
-const X_GAP   = 340;
-const Z_DEPTH = 140;
-
 export default function CentralCarousel() {
   const { lang } = useI18n();
   const [active, setActive] = useState(0);
+
+  // Responsive dimensions
+  const [dims, setDims] = useState({ w: 420, h: 580, gap: 340, depth: 140 });
+
+  useEffect(() => {
+    const update = () => {
+      const vw = window.innerWidth;
+      if (vw < 480) {
+        setDims({ w: vw * 0.78, h: vw * 1.05, gap: vw * 0.52, depth: 80 });
+      } else if (vw < 768) {
+        setDims({ w: 300, h: 420, gap: 240, depth: 100 });
+      } else {
+        setDims({ w: 420, h: 580, gap: 340, depth: 140 });
+      }
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  const CARD_W = dims.w;
+  const CARD_H = dims.h;
+  const X_GAP  = dims.gap;
+  const Z_DEPTH = dims.depth;
   const [expandedSlide, setExpandedSlide] = useState<number | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const total = slides.length;
@@ -61,10 +80,12 @@ export default function CentralCarousel() {
   const resume = () => startTimer();
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24 overflow-hidden">
       <div className="text-center mb-16 px-4">
-        <p className="text-gold-500 text-xs font-semibold tracking-[0.35em] uppercase mb-4">{t.central.sectionLabel[lang]}</p>
-        <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900">{t.central.sectionTitle[lang]}</h2>
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900">
+          Photo <span className="text-gold-500">Gallery</span>
+          <span className="block text-2xl md:text-3xl font-medium text-gray-400 mt-4 tracking-wide">แกลเลอรี่ภาพ</span>
+        </h2>
         <div className="w-12 h-0.5 bg-gold-500 mx-auto mt-5" />
       </div>
 

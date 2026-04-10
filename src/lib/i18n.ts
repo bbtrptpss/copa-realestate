@@ -58,4 +58,8 @@ export const t = {
       zh: "公共设施大图",
     },
   },
+  awards: {
+    sectionLabel: { th: "ประสบการณ์และรางวัล", en: "Experience & Awards", zh: "经验与荣誉" },
+    sectionTitle: { th: "OUR MILESTONES", en: "เส้นทางของเรา", zh: "我们的里程碑" },
+  },
 } as const;

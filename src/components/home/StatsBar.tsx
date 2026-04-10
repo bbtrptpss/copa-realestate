@@ -1,6 +1,6 @@
 const stats = [
-  { value: "15+", label: "ปีประสบการณ์" },
-  { value: "2,000+", label: "ยูนิตที่ขายแล้ว" },
+  { value: "15+", label: "Years of Experience" },
+  { value: "2,000+", label: "Sold Units" },
   { value: "5★", label: "คะแนนความพึงพอใจ" },
   { value: "30+", label: "ชาติที่เป็นลูกค้า" },
 ];

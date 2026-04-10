@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import logoImg from "@/Logo/logo.png";
 
 const projects = [
   { name: "Copa Beach Jomtien", href: "/projects/copa-beach-jomtien" },
@@ -31,14 +33,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand — span 2 */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gold-500 flex items-center justify-center">
-                <span className="text-white font-bold text-lg font-serif">C</span>
-              </div>
-              <div>
-                <div className="text-white font-serif font-bold text-lg tracking-wide">COPA</div>
-                <div className="text-gold-400 text-[9px] tracking-[0.3em] uppercase">Real Estate</div>
-              </div>
+            <Link href="/" className="flex items-center mb-6">
+              <Image src={logoImg} alt="Copacabana Group" height={56} className="h-14 w-auto object-contain" />
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
               ผู้พัฒนาอสังหาริมทรัพย์ระดับ Luxury บนทำเลทองริมหาดจอมเทียน พัทยา

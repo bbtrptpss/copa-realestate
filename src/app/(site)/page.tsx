@@ -21,30 +21,25 @@ export default function HomePage() {
       {/* 1. Full-screen Hero Carousel */}
       <Hero />
 
-      {/* 7. Brand Story — lifestyle narrative */}
-      <BrandStorySection />
-
-      {/* 3. Featured Projects — 3D Carousel */}
-      <ProjectsCarousel />
-
-      {/* 4. Central Facilities Carousel */}
-      <CentralCarousel />
-
-      {/* 5. Luxury Collection Banner */}
-      {/* <LuxuryBanner /> */}
-
-      {/* 7. News & Articles */}
-      <NewsSection />
-
-      {/* 2. Why Copa — 3-column trust highlights */}
-      <WhyCopaSection />
-
-
-
-      {/* 8. Awards & Stats */}
+      {/* Awards & Stats Timeline */}
       <AwardsSection />
 
-      {/* 8. Newsletter Signup */}
+      {/* Brand Story — lifestyle narrative */}
+      <BrandStorySection />
+
+      {/* Featured Projects — 3D Carousel */}
+      <ProjectsCarousel />
+
+      {/* Central Facilities Carousel */}
+      <CentralCarousel />
+
+      {/* News & Articles */}
+      <NewsSection />
+
+      {/* Why Copa — 3-column trust highlights */}
+      <WhyCopaSection />
+
+      {/* Newsletter Signup */}
       <NewsletterSection />
     </>
   );
